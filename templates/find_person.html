@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Find Missing Person</h2>
+<p>The live video feed below will search for the missing person. Please allow camera access.</p>
+<div>
+    <img src="{{ url_for('video_feed') }}" style="width:100%;" alt="Live Video Feed" />
+</div>
+{% endblock %}
